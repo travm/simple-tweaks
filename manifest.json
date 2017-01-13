@@ -1,0 +1,17 @@
+{
+    "name": "Simple Tweaks",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "description": "User experience tweaks for Simple's web UI.",
+    "homepage_url": "https://github.com/travm/simple-tweaks",
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "matches": ["https://bank.simple.com/transactions/*"],
+            "css": ["src/main.css"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}

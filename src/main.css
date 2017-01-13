@@ -1,0 +1,51 @@
+/* TRANSACTION DETAIL */
+.transaction-detail .sidebar-inset-content {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.transaction-detail .sidebar-inset-content > .sidebar-offset,
+.transaction-detail .sidebar-inset-content > .sidebar-offset-section {
+    flex:1 0 100%;
+}
+
+.transaction-detail .sidebar-inset-content > .sidebar-offset-section .map-locality {
+    display:none;
+}
+
+.transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(6) {
+    order: 3;
+}
+
+/********************/
+/* TRANSACTION EDIT */
+/********************/
+.transaction-edit .sidebar-offset-content {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.transaction-edit .sidebar-offset-content > div {
+    flex:1 0 100%;
+    order:2;
+}
+
+/* Move Button Above The Fold */
+.transaction-edit .sidebar-offset-content > .button-group {
+    margin:0 !important;
+    position:absolute;
+    top:1em;
+    right:1.5em;
+    order:1;
+    z-index:2
+}
+
+.transaction-edit .sidebar-offset-content > .button-group > .btn {
+    font-size:1em;
+    padding:.5em .75em;
+}
+
+.transaction-edit .sidebar-offset-content input,
+.transaction-edit .sidebar-offset-content textarea {
+    padding:1em !important;
+}
