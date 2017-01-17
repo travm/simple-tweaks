@@ -71,3 +71,15 @@
 .transaction-edit .sidebar-offset-content textarea {
     padding:1em !important;
 }
+
+/* Reduces size of large selects. */
+.transaction-edit .react-select .Select {
+    font-size:1em;
+}
+
+
+/********************/
+/* SUPPORT MESSAGES */
+/********************/
+
+#message-reply {margin:0;}
