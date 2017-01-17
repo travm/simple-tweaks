@@ -1,4 +1,12 @@
+/**********************/
 /* TRANSACTION DETAIL */
+/**********************/
+
+/*
+    Gives us more control over the order of elements in the sidebar.
+    Currently being used to move the edit controls higher to the
+    information they are more accurately related to.
+ */
 .transaction-detail .sidebar-inset-content {
     display:flex;
     flex-wrap:wrap;
@@ -9,13 +17,27 @@
     flex:1 0 100%;
 }
 
+/* Moves less important content to the bottom. */
+.transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(6) {
+    order:2;
+}
+.transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(7) {
+    order:2;
+}
+.transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(9) {
+    order:2;
+}
+
+/*
+    This is some location information that they have set the visibility
+    to hidden for some reason. So, it's essentially just creating a large
+    white gap in the UI. This gets rid of it until they start using it.
+*/
 .transaction-detail .sidebar-inset-content > .sidebar-offset-section .map-locality {
     display:none;
 }
 
-.transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(6) {
-    order: 3;
-}
+
 
 /********************/
 /* TRANSACTION EDIT */

@@ -7,7 +7,7 @@
     "content_scripts": [
         {
             "all_frames": true,
-            "matches": ["https://bank.simple.com/transactions/*"],
+            "matches": ["https://bank.simple.com/*"],
             "css": ["src/main.css"]
         }
     ],
