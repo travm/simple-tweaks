@@ -6,18 +6,25 @@
     Gives us more control over the order of elements in the sidebar.
     Currently being used to move the edit controls higher to the
     information they are more accurately related to.
+
+    NOTE: Commenting some of this out for the moment, due to the
+    element order being terribly unpredictable and thus making this solution very fragile. Will look for better solution.
  */
+/*
 .transaction-detail .sidebar-inset-content {
     display:flex;
     flex-wrap:wrap;
+    flex-direction:column;
 }
 
 .transaction-detail .sidebar-inset-content > .sidebar-offset,
 .transaction-detail .sidebar-inset-content > .sidebar-offset-section {
     flex:1 0 100%;
 }
+*/
 
 /* Moves less important content to the bottom. */
+/*
 .transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(6) {
     order:2;
 }
@@ -27,6 +34,7 @@
 .transaction-detail .sidebar-inset-content > .sidebar-offset:nth-child(9) {
     order:2;
 }
+*/
 
 /*
     This is some location information that they have set the visibility
